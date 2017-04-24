@@ -16,8 +16,6 @@ Large pages or pages with many input elements. When validation fails, it is imme
 ## Features And Limitations
 Reposition the page to show validation errors. Expand groupboxes if necessary.
 
-The input element must be in a table cell.
-
 This widget does not work with tab containers. 
 
 ## Installation

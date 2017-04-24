@@ -132,7 +132,7 @@ define([
             parentElement = this.domNode.parentElement;
             delay = this.delay;
             setTimeout(function () {
-                tdNodeList = domQuery("td div.alert.alert-danger", parentElement);
+                tdNodeList = domQuery("div.has-error", parentElement);
                 // If there a validation error was found, take the first one.
                 if (tdNodeList.length > 0) {
                     // We got the div with the error message but we need the parent. 
