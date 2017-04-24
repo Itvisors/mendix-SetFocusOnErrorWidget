@@ -29,5 +29,5 @@ Mendix 6.10.2
 ## Configuration
 In the designer, place this widget in the topmost dataview of the page. 
 
-##Properties
+## Properties
 delay: For large pages, showing many validation errors can take a little time. As this widget can only act after the validation errors are shown, this property can be used to set a delay.
