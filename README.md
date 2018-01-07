@@ -30,4 +30,4 @@ In the designer, place this widget in the topmost dataview of the page.
 ## Properties
 delay: For large pages, showing many validation errors can take a little time. As this widget can only act after the validation errors are shown, this property can be used to set a delay.
 
-gotoFirstElement: Goes to the first error rather that the first element in the container if true. This is useful if the first error is someway down in a layoutGrid.
+gotoFirstElement: Goes to the first error rather than the first element in the container if true. This is useful if the first error is someway down in a layoutGrid.
