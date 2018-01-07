@@ -42,6 +42,7 @@ define([
         _contextGuid: null,
         _contextObj: null,
         _validationHandle: null,
+        gotoFirstError: false,
 
         /**
          * Mendix Widget methods.
@@ -127,15 +128,17 @@ define([
                 inputNodeList,
                 node,
                 parentElement,
-                tdNodeList;
+                tdNodeList,
+                gotoFirstError;
 
             parentElement = this.domNode.parentElement;
             delay = this.delay;
+            gotoFirstError = this.gotoFirstError;
             setTimeout(function () {
                 tdNodeList = domQuery("div.has-error", parentElement);
                 // If there a validation error was found, take the first one.
                 if (tdNodeList.length > 0) {
-                    // We got the div with the error message but we need the parent. 
+                    // We got the div with the error message but we need the parent.
                     node = tdNodeList[0].parentElement;
                     // Find all collapsed groupboxes, expand the groupbox if the node is a descendant of the groupbox.
                     domQuery(".mx-groupbox.mx-groupbox-collapsible.collapsed", parentElement).forEach(function (groupboxElement) {
@@ -145,6 +148,13 @@ define([
                             });
                         }
                     });
+
+                    // if we want to go to the first error, we reset node to the first element
+                    // in the tdNodeList.
+                    if (gotoFirstError) {
+                        node = tdNodeList[0];
+                    }
+
                     // Scroll element into view
                     win.scrollIntoView(node);
                     // Find any input or select elements in the node and set the focus if found.

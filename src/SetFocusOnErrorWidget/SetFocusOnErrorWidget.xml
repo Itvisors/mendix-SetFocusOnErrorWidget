@@ -3,18 +3,18 @@
   <name>SetFocusOnErrorWidget</name>
   <description>Set focus on first input element with error.</description>
 
-  <icon>iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAABHNCSVQICAgIfAhkiAAAAAlw 
-SFlzAAALEgAACxIB0t1+/AAAABZ0RVh0Q3JlYXRpb24gVGltZQAwNC8xMS8wOGGVBZQAAAAc 
-dEVYdFNvZnR3YXJlAEFkb2JlIEZpcmV3b3JrcyBDUzQGstOgAAACE0lEQVQ4jc2UsU/bUBDG 
-v5fYJpatQkmkRgKB6FBVCqIVGWBg4A+ImiEjQzPVXbJ2gImFtYMnqyMDc5UMjBFSRYYMrcAo 
-Q1RRE0BJXBHHjpwmfrkObaNWkVpXpRLfcvf0Tr/Tu3d3jIhwm4rcKu1/AIUwQYyxH674Zn39 
-0RPGjP7V1drQcQRxejpQ5ubeKfH488bR0ScWpobfgbFXqdTTZ/1+OSqKUwubm1Dn59G7vsbH 
-w0MwxvzE8vLjsEARwINyOv12ynVXV/L5X+455zD39yHNzJRZtVr9I7HX68GyLCzs7ODhxgbu 
-Ly5C2dtDb3t7bO16HRfHx4EAAOl0+rdA27ZBRBg6DhRFAbkuvEIBqq7DKxQAAIqiYOB5wviX 
-NU1DsViEpmkTwNFoBM45JFWFZ1kg14Wq63Dzeai6/i2BZUGIxYIx0DAMlEolGIYxAYxEIohG 
-o4ikUmicnSHodNDN5UCui24uh6DTwYVpQlLVSqg+lCQJqqriZmsLQ8ZwWqng8+Ul+t0u7EYD 
-p5UKiLEv74PgRag+lGUZyWQSvu/jZncXswcHaJycYOj7ECSJc0X5UPT9l6/Pz+tCEATjGmYy 
-GWiaNvFsURQRj8dBRJBlGd7SEjjn8DwP2Wx2DUATgE1EQ5imSWE1GAzIcRxqtVrUbDapVqsR 
+  <icon>iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAABHNCSVQICAgIfAhkiAAAAAlw
+SFlzAAALEgAACxIB0t1+/AAAABZ0RVh0Q3JlYXRpb24gVGltZQAwNC8xMS8wOGGVBZQAAAAc
+dEVYdFNvZnR3YXJlAEFkb2JlIEZpcmV3b3JrcyBDUzQGstOgAAACE0lEQVQ4jc2UsU/bUBDG
+v5fYJpatQkmkRgKB6FBVCqIVGWBg4A+ImiEjQzPVXbJ2gImFtYMnqyMDc5UMjBFSRYYMrcAo
+Q1RRE0BJXBHHjpwmfrkObaNWkVpXpRLfcvf0Tr/Tu3d3jIhwm4rcKu1/AIUwQYyxH674Zn39
+0RPGjP7V1drQcQRxejpQ5ubeKfH488bR0ScWpobfgbFXqdTTZ/1+OSqKUwubm1Dn59G7vsbH
+w0MwxvzE8vLjsEARwINyOv12ynVXV/L5X+455zD39yHNzJRZtVr9I7HX68GyLCzs7ODhxgbu
+Ly5C2dtDb3t7bO16HRfHx4EAAOl0+rdA27ZBRBg6DhRFAbkuvEIBqq7DKxQAAIqiYOB5wviX
+NU1DsViEpmkTwNFoBM45JFWFZ1kg14Wq63Dzeai6/i2BZUGIxYIx0DAMlEolGIYxAYxEIohG
+o4ikUmicnSHodNDN5UCui24uh6DTwYVpQlLVSqg+lCQJqqriZmsLQ8ZwWqng8+Ul+t0u7EYD
+p5UKiLEv74PgRag+lGUZyWQSvu/jZncXswcHaJycYOj7ECSJc0X5UPT9l6/Pz+tCEATjGmYy
+GWiaNvFsURQRj8dBRJBlGd7SEjjn8DwP2Wx2DUATgE1EQ5imSWE1GAzIcRxqtVrUbDapVqsR
 gHsARCICEYG12+1/WjeJRIL9fA41KX+ju7++7j7wKxFLGkZm1GC8AAAAAElFTkSuQmCC</icon>
 
   <properties>
@@ -22,6 +22,11 @@ gHsARCICEYG12+1/WjeJRIL9fA41KX+ju7++7j7wKxFLGkZm1GC8AAAAAElFTkSuQmCC</icon>
             <caption>Delay before setting focus</caption>
             <category>Configuration</category>
             <description>With large pages, setting the validation messages can take some time. Use the delay if necessary</description>
+        </property>
+        <property key="gotoFirstError" type="boolean" defaultValue="false">
+            <caption>Scroll directly to first error</caption>
+            <category>Configuration</category>
+            <description>If checked go directly to the first error, not the first element in the container.</description>
         </property>
 	</properties>
 </widget>
